@@ -1,0 +1,12 @@
+.section-extend{
+    width: 100%;
+    padding: 20px;
+}
+
+.container-details > p{
+    margin: 0;
+}
+
+.container-details div, p{
+    padding: 5px;
+}

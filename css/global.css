@@ -1,0 +1,388 @@
+:root {
+    --bg: linear-gradient(88deg, #e21d2a 4.04%, #9A779B 44%, #E2A491 71%, #ff9222 94.56%);
+    --card: linear-gradient(180deg, #18062b66 0.04%, #22408c36 102.56%);
+    --glass: rgba(255, 255, 255, 0.145);
+    --text: #e6eef8;
+    --textSelect: rgb(22, 22, 29);
+    --muted: #fff2b1;
+    --radius: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #EFEFEF;
+    color: var(--text);
+
+}
+
+
+.container {
+    padding: 20px 0 0 0;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+    background: var(--card);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.brand {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+#img-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+
+}
+
+.nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.nav a:hover {
+    background: var(--glass);
+}
+
+.social-netwok a {
+    color: var(--text);
+    font-size: 100%;
+}
+
+.hero {
+    display: grid;
+    gap: 18px;
+    margin: 22px 0;
+    align-content: center;
+    align-items: center;
+}
+
+.hero-card {
+    padding: 18px;
+}
+
+.hero h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.media-grid img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+aside.info {
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(107, 155, 255, 0.06), rgba(255, 107, 107, 0.04));
+}
+
+.section-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+
+}
+
+.section {
+    margin: 18px 0;
+}
+
+.card {
+    background: var(--card);
+    padding: 14px;
+    border-radius: 12px;
+}
+
+.footer {
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 25px 0;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    border: 0;
+}
+
+.video,
+.audio {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    text-align: center;
+}
+
+.program-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+}
+
+.program-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+select,
+textarea,
+datalist,
+.datalist-input {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--text);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #e6eef89a;
+}
+
+textarea {
+    min-height: 120px
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    color: var(--text);
+    background: var(--card);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.small {
+    font-size: 0.9rem;
+}
+
+.flex {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.badge {
+    padding: 6px 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+ol,
+li,
+ul {
+    margin: 1vw;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 425px) {
+    .twoArtist {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para pantallas de hasta 768px de ancho */
+@media screen and (max-width: 768px) {
+
+    .media-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .media-grid img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        font-size: small;
+        text-align: center;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 16px;
+        padding: 12px;
+        background: var(--card);
+        border-radius: 12px;
+    }
+
+    .table td {
+        text-align: left;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        position: relative;
+        padding-left: 90px;
+    }
+
+    .table td:last-child {
+        border-bottom: none;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        top: 8px;
+        font-weight: bold;
+        color: var(--muted);
+        width: 80px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .section-title {
+        padding: 1rem;
+    }
+}
